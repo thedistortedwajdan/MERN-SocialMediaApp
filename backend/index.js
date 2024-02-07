@@ -18,7 +18,8 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 
-app.use("api/users", userApi);
+app.use("/api/user", userApi);
+app.use("/api/auth", authApi);
 
 app.listen(process.env.PORT, () => {
   console.log(`backend running on http://localhost:${process.env.PORT}`);

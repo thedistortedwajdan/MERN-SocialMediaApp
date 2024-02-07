@@ -1,9 +1,8 @@
-import mongoose, { mongo } from "mongoose";
-
+import mongoose from "mongoose";
 const userSchema = new mongoose.Schema(
   {
     name: {
-      typpe: String,
+      type: String,
       required: true,
       min: 3,
     },
