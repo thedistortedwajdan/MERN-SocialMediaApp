@@ -72,4 +72,26 @@ const follow = async (req, res) => {
   }
 };
 
-export { update, remove, get, follow };
+const unfollow = async (req, res) => {
+  try {
+    const followed = await userModel.findById(req.params.id);
+    if (!followed) {
+      return res.status(400).json("followed does not exist");
+    }
+    const follower = await userModel.findById(req.body.id);
+    if (!follower) {
+      return res.status(400).json("follower does not exist");
+    }
+    if (!followed.followers.includes(follower._doc._id)) {
+      return res.status(400).json("already not following");
+    }
+    await followed.updateOne({ $pull: { followers: follower._doc._id } });
+    await follower.updateOne({ $pull: { following: followed._doc._id } });
+    return res.status(200).json("unfollowed");
+  } catch (error) {
+    console.log(`unfollow => ${error.message}`);
+    return res.status(500).json("server error");
+  }
+};
+
+export { update, remove, get, follow, unfollow };
