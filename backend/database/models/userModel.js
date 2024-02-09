@@ -21,6 +21,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       min: 8,
     },
+    desc: {},
+    city: {
+      type: String,
+      default: "",
+    },
     profilePicture: {
       type: String,
       default: "",

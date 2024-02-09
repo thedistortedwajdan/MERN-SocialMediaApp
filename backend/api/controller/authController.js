@@ -5,7 +5,9 @@ const register = async (req, res) => {
   try {
     const { name, email, password: plainPassword, username } = req.body;
     const isEmail = await userModel.findOne({ email });
-    isEmail && res.status(400).json("user exists");
+    if (isEmail) {
+      return res.status(400).json("user exists");
+    }
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(plainPassword, salt);
     const user = new userModel({
@@ -14,10 +16,12 @@ const register = async (req, res) => {
       password: hashedPassword,
       username,
     });
-    const { password, ...rest } = await user.save();
-    res.status(200).json(rest._doc);
+    await user.save();
+    const { password, ...rest } = user._doc;
+    return res.status(200).json(rest);
   } catch (error) {
-    res.status(500).json(`register => ${error.message}`);
+    console.log(`register => ${error.message}`);
+    return res.status(500).json("server error");
   }
 };
 
@@ -25,13 +29,18 @@ const login = async (req, res) => {
   try {
     const { email, password: plainPassword } = req.body;
     const isEmail = await userModel.findOne({ email });
-    !isEmail && res.status(400).json("user does not exist");
+    if (!isEmail) {
+      return res.status(400).json("user does not exist");
+    }
     const compare = await bcrypt.compare(plainPassword, isEmail.password);
-    !compare && res.status(400).json("incorrect password");
-    const { password, ...rest } = isEmail;
-    res.status(200).json(rest._doc);
+    if (!compare) {
+      return res.status(400).json("ivalid credentials");
+    }
+    const { password, ...rest } = isEmail._doc;
+    return res.status(200).json(rest);
   } catch (error) {
-    res.status(500).json(`login => ${error.message}`);
+    console.log(`login => ${error.message}`);
+    return res.status(500).json("server error");
   }
 };
 
