@@ -51,4 +51,43 @@ const remove = async (req, res) => {
   }
 };
 
-export { create, update, remove };
+const like_dislike = async (req, res) => {
+  try {
+    const post = await postModel.findById(req.params.id);
+    if (!post) {
+      return res.status(400).json("post not found");
+    }
+    if (post.likes.includes(req.body.userId)) {
+      await post.updateOne({ $pull: { likes: req.body.userId } });
+      return res.status(200).json("disliked");
+    }
+    await post.updateOne({ $push: { likes: req.body.userId } });
+    return res.status(200).json("liked");
+  } catch (error) {
+    console.log(`like/dislike => ${error.message}`);
+    return res.status(500).json("server error");
+  }
+};
+
+const get = async (req, res) => {
+  try {
+    const post = await postModel.findById(req.params.id);
+    if (!post) {
+      return res.status(400).json("post not found");
+    }
+    return res.status(200).json(post);
+  } catch (error) {
+    console.log(`getPost => ${error.message}`);
+    return res.status(500).json("server error");
+  }
+};
+
+const getAll = async (req, res) => {
+  try {
+  } catch (error) {
+    console.log(`getAllPost => ${error.message}`);
+    return res.status(500).json("server error");
+  }
+};
+
+export { create, update, remove, like_dislike, get, getAll };
