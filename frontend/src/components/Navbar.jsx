@@ -180,7 +180,12 @@ export default function Navbar() {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed">
+        <AppBar
+          position="fixed"
+          sx={{
+            top: 0,
+          }}
+        >
           <Toolbar>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
               <IconButton
