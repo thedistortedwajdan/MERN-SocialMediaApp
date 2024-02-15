@@ -20,7 +20,14 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 export default function Leftbar() {
   return (
     <>
-      <Box flex={2.5} sx={{ maxHeight: "93vh", overflowY: "scroll" }}>
+      <Box
+        flex={2.5}
+        display={{
+          xs: "none",
+          sm: "block",
+        }}
+        sx={{ maxHeight: "93vh", overflowY: "scroll" }}
+      >
         <Box sx={{ bgcolor: "background.paper" }}>
           <nav aria-label="main mailbox folders">
             <List>
@@ -77,7 +84,7 @@ export default function Leftbar() {
               </ListItem>
             </List>
           </nav>
-          <Divider />
+          <Divider variant="middle" />
           <nav aria-label="secondary mailbox folders">
             <List>
               <ListItem alignItems="flex-start">
