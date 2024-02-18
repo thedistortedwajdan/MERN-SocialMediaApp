@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Badge,
   Box,
   List,
   ListItem,
@@ -58,11 +59,16 @@ export default function Rightbar() {
             </Typography>
           </Paper>
           <Box sx={{ bgcolor: "background.paper" }}>
+            <Typography mx={"auto"} component={"span"} fontWeight={"bold"}>
+              Online Friends
+            </Typography>
             <nav aria-label="secondary mailbox folders">
               <List>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -73,7 +79,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -84,7 +92,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -95,7 +105,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -106,7 +118,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -117,7 +131,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -128,7 +144,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -139,7 +157,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -150,7 +170,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -161,7 +183,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -172,7 +196,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -183,7 +209,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -194,7 +222,9 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
@@ -205,7 +235,152 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="" />
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
+                  </ListItemAvatar>
+                  <ListItemText
+                    sx={{
+                      alignSelf: "center",
+                    }}
+                    primary="Ali Conors"
+                  />
+                </ListItem>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Badge color="primary" overlap="circular" badgeContent="">
+                      <Avatar alt="Remy Sharp" src="" />
+                    </Badge>
                   </ListItemAvatar>
                   <ListItemText
                     sx={{
