@@ -3,12 +3,15 @@ import {
   Box,
   Button,
   Divider,
+  ImageList,
+  ImageListItem,
   List,
   ListItem,
   ListItemAvatar,
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Typography,
 } from "@mui/material";
 
 import HubIcon from "@mui/icons-material/Hub";
@@ -17,9 +20,10 @@ import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import GroupsIcon from "@mui/icons-material/Groups";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 
-export default function Leftbar() {
+const Home = () => {
   return (
     <>
+      {" "}
       <Box
         flex={2.5}
         display={{
@@ -245,6 +249,433 @@ export default function Leftbar() {
           </nav>
         </Box>
       </Box>
+    </>
+  );
+};
+
+const Profile = () => {
+  return (
+    <>
+      <Box
+        flex={{
+          xs: 0,
+          lg: 4,
+        }}
+        display={{
+          xs: "none",
+          lg: "flex",
+        }}
+        height={"fit-content"}
+        p={2}
+        sx={{ maxHeight: "62vh", overflowY: "scroll" }}
+      >
+        <Box p={2}>
+          <Typography fontWeight={"bold"} fontSize={"1.5rem"}>
+            Friends
+          </Typography>
+          <ImageList
+            sx={{ width: "100%", height: 450, mb: 2 }}
+            cols={3}
+            rowHeight={"auto"}
+          >
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300?w=164&h=164&fit=crop&auto=format 2x"
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=300"
+                alt=""
+                loading="lazy"
+              />
+              <Typography>John Doe</Typography>
+            </ImageListItem>
+          </ImageList>
+          <Typography fontWeight={"bold"} fontSize={"1.5rem"}>
+            Photos
+          </Typography>
+          <ImageList
+            sx={{ width: "100%", height: 450, mb: 1 }}
+            cols={3}
+            rowHeight={"auto"}
+          >
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+            <ImageListItem
+              sx={{
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ borderRadius: 10 }}
+                srcSet="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load 2x"
+                src="https://images.pexels.com/photos/19338186/pexels-photo-19338186/free-photo-of-scenic-view-of-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+                loading="lazy"
+              />
+            </ImageListItem>
+          </ImageList>
+        </Box>
+      </Box>
+    </>
+  );
+};
+
+export default function Leftbar() {
+  return (
+    <>
+      <Profile />
     </>
   );
 }

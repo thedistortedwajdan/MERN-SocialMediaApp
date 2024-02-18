@@ -66,7 +66,7 @@ export default function Rightbar() {
               <List>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -79,7 +79,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -92,7 +92,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -105,7 +105,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -118,7 +118,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -131,7 +131,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -144,7 +144,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -157,7 +157,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -170,7 +170,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -183,7 +183,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -196,7 +196,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -209,7 +209,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -222,7 +222,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -235,7 +235,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -248,7 +248,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -261,7 +261,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -274,7 +274,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -287,7 +287,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -300,7 +300,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -313,7 +313,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -326,7 +326,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -339,7 +339,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -352,7 +352,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -365,7 +365,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>
@@ -378,7 +378,7 @@ export default function Rightbar() {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Badge color="primary" overlap="circular" badgeContent="">
+                    <Badge color="success" overlap="circular" badgeContent="">
                       <Avatar alt="Remy Sharp" src="" />
                     </Badge>
                   </ListItemAvatar>

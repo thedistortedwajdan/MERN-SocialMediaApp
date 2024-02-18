@@ -1,11 +1,13 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
     <>
       <CssBaseline />
-      <Home />
+      {/* <Home /> */}
+      <Profile />
     </>
   );
 }
