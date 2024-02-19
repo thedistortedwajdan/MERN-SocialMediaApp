@@ -8,6 +8,14 @@ function App() {
   return (
     <>
       <CssBaseline />
+      <HashRouter basename="/">
+        <Routes>
+          <Route exact path="/" element={<Account />} />
+          <Route exact path="/register" element={<Account />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/profile" element={<Profile />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 }

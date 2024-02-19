@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import Leftbar from "../components/Leftbar";
 import Feed from "../components/Feed";
-import Rightbar from "../components/Rightbar";
 import { Box } from "@mui/material";
 import ProfileIntro from "../components/ProfileIntro";
 

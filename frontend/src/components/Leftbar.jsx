@@ -19,6 +19,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import GroupsIcon from "@mui/icons-material/Groups";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -673,9 +674,7 @@ const Profile = () => {
 };
 
 export default function Leftbar() {
-  return (
-    <>
-      <Profile />
-    </>
-  );
+  const location = useLocation();
+  const currentLocation = location.pathname;
+  return <>{currentLocation === "/home" ? <Home /> : <Profile />}</>;
 }

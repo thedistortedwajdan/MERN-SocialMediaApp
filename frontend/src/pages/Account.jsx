@@ -5,17 +5,16 @@ import {
   FormControl,
   IconButton,
   InputAdornment,
-  OutlinedInput,
   TextField,
   Typography,
 } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -34,7 +33,7 @@ const Login = () => {
       //   password,
       // });
       setError([false, ""]);
-      // navigate("/home");
+      navigate("/home");
     } catch (err) {
       setError([true, "Server error, try again later."]);
     }
@@ -97,6 +96,11 @@ const Login = () => {
               variant="outlined"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  login(e);
+                }
+              }}
             />
             <TextField
               sx={{
@@ -107,6 +111,11 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  login(e);
+                }
+              }}
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
@@ -141,7 +150,7 @@ const Login = () => {
             <Button
               variant="outlined"
               onClick={() => {
-                // navigate("/register")
+                navigate("/register");
               }}
             >
               Register
@@ -154,7 +163,7 @@ const Login = () => {
 };
 
 const Register = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [cpassword, setcPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -165,14 +174,12 @@ const Register = () => {
   const register = async (e) => {
     setError([false, ""]);
     try {
-      if (
-        email === "" ||
-        password === "" ||
-        name === "" ||
-        cpassword === "" ||
-        password !== cpassword
-      ) {
-        setError([true, "Invalid email or password."]);
+      if (email === "" || name === "" || password === "" || cpassword === "") {
+        setError([true, "Make sure to fill all the fields correctly."]);
+        return;
+      }
+      if (password !== cpassword) {
+        setError([true, "Passwords do not match."]);
         return;
       }
       e.preventDefault();
@@ -181,7 +188,7 @@ const Register = () => {
       //   password,
       // });
       setError([false, ""]);
-      // navigate("/login");
+      navigate("/");
     } catch (err) {
       setError([true, "Server error, try again later."]);
     }
@@ -244,6 +251,11 @@ const Register = () => {
               variant="outlined"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  register(e);
+                }
+              }}
             />
             <TextField
               sx={{
@@ -253,6 +265,11 @@ const Register = () => {
               variant="outlined"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  register(e);
+                }
+              }}
             />
             <TextField
               sx={{
@@ -263,6 +280,11 @@ const Register = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  register(e);
+                }
+              }}
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
@@ -284,6 +306,11 @@ const Register = () => {
               variant="outlined"
               type={showPassword ? "text" : "password"}
               value={cpassword}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  register(e);
+                }
+              }}
               onChange={(e) => setcPassword(e.target.value)}
               InputProps={{
                 endAdornment: (
@@ -319,7 +346,7 @@ const Register = () => {
             <Button
               variant="outlined"
               onClick={() => {
-                // navigate("/login")
+                navigate("/");
               }}
             >
               Login
@@ -332,10 +359,7 @@ const Register = () => {
 };
 
 export default function Account() {
-  return (
-    <>
-      {/* <Login /> */}
-      <Register />
-    </>
-  );
+  const location = useLocation();
+  const currenLocation = location.pathname;
+  return <>{currenLocation === "/register" ? <Register /> : <Login />}</>;
 }

@@ -14,10 +14,9 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const pages = ["Home", "Timeline"];
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -60,20 +59,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+  const location = useLocation();
+  const currenLocation = location.pathname;
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
-  const [anchorElNav, setAnchorElNav] = useState(null);
-
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -109,8 +102,22 @@ export default function Navbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem
+        onClick={() => {
+          currenLocation === "/profile"
+            ? navigate("/home")
+            : navigate("/profile");
+        }}
+      >
+        {currenLocation === "/profile" ? "Home" : "Profile"}
+      </MenuItem>
+      <MenuItem
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Logout
+      </MenuItem>
     </Menu>
   );
 
@@ -173,7 +180,7 @@ export default function Navbar() {
         >
           <AccountCircle />
         </IconButton>
-        <p>Profile</p>
+        <p>Account</p>
       </MenuItem>
     </Menu>
   );
@@ -187,42 +194,6 @@ export default function Navbar() {
           }}
         >
           <Toolbar>
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", md: "none" },
-                }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
             <Typography
               variant="h6"
               noWrap
