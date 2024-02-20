@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "deploy": "cd frontend && npm run build && npx gh-pages -d build --branch=gh-pages"
+  }
+}
